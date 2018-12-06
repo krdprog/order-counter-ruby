@@ -12,5 +12,13 @@ loop do
 
 	order[id_product] = amount
 
+	# calculate total number of items in cart
+	total = 0
+
+	order.each do |key, value|
+		total += value
+	end
+
 	puts order.inspect
+	puts "Total: #{total}"
 end
