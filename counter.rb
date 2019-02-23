@@ -15,7 +15,7 @@ loop do
   # calculate total number of items in cart
   total = 0
 
-  order.each do |key,value|
+  order.each do |key, value|
     total += value
   end
 
